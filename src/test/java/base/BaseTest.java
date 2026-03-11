@@ -11,6 +11,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public abstract class BaseTest {
     @BeforeMethod
     public void setup() {
+        //
         Configuration.browser = "chrome";
         Configuration.headless = false;
         Configuration.timeout = 10_000;
